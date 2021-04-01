@@ -11,9 +11,9 @@ const main = function () {
   const renderResult = function (results) {
     clubListElement.innerHTML = "";
     results.forEach(function (club) {
-      const name = club.name;
-      const fanArt = club.fanArt;
-      const description = club.description;
+      const { name, fanArt, description } = club;
+      //   const fanArt = club.fanArt;
+      //   const description = club.description;
 
       const clubElement = document.createElement("div");
       clubElement.setAttribute("class", "club");
